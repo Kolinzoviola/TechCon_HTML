@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for TechCon 2024</title>
+  </head>
+  <body>
+    <header>
+      <h1>Register for TechCon 2024</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Join Us for Two Days of Innovation and Learning</h2>
+      <p>
+        Complete the registration form below to secure your spot at TechCon
+        2024. Early bird pricing is available until July 31, 2025.
+      </p>
+
+      <h3>Registration Information</h3>
+      <ul>
+        <li><strong>Early Bird Price:</strong> $299 (Until July 31, 2025)</li>
+        <li>
+          <strong>Regular Price:</strong> $399 (August 1 - September 10, 2025)
+        </li>
+        <li>
+          <strong>Student Discount:</strong> 50% off with valid student ID
+        </li>
+        <li>
+          <strong>Group Discounts:</strong> 15% off for 5+ registrations from
+          same company
+        </li>
+      </ul>
+
+      <h3>What's Included</h3>
+      <ul>
+        <li>Access to all keynote sessions and presentations</li>
+        <li>Participation in hands-on workshops</li>
+        <li>Conference materials and swag bag</li>
+        <li>Breakfast, lunch, and refreshments both days</li>
+        <li>Networking reception and closing celebration</li>
+        <li>One-year access to recorded sessions</li>
+        <li>Digital certificates of attendance</li>
+      </ul>
+
+      <form action="process-registration.php" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="fullname"
+              >Full Name (as it will appear on your badge):</label
+            ><br />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              size="40"
+              placeholder="Enter your full name"
+            />
+          </p>
+
+          <p>
+            <label for="email"
+              >Email Address (for confirmation and updates):</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              size="40"
+              placeholder="your.email@example.com"
+            />
+          </p>
+
+          <p>
+            <label for="phone"
+              >Phone Number (optional, for emergency contact):</label
+            ><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              size="20"
+              placeholder="(555) 123-4567"
+            />
+          </p>
+
+          <p>
+            <label for="company">Company/Organization (optional):</label><br />
+            <input
+              type="text"
+              id="company"
+              name="company"
+              size="40"
+              placeholder="Your company name"
+            />
+          </p>
+
+          <p>
+            <label for="jobtitle">Job Title (optional):</label><br />
+            <input
+              type="text"
+              id="jobtitle"
+              name="jobtitle"
+              size="40"
+              placeholder="Your current role"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Creation</legend>
+
+          <p>
+            <label for="password">Create Password (minimum 8 characters):</label
+            ><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="8"
+              size="30"
+            />
+          </p>
+
+          <p>
+            <label for="confirmpassword"
+              >Confirm Password (re-enter your password):</label
+            ><br />
+            <input
+              type="password"
+              id="confirmpassword"
+              name="confirmpassword"
+              required
+              minlength="8"
+              size="30"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Registration Options</legend>
+
+          <p>
+            <label for="tickettype">Registration Type:</label><br />
+            <select id="tickettype" name="tickettype" required>
+              <option value="">Select your registration type</option>
+              <option value="early-bird">
+                Early Bird - $299 (Available until July 31)
+              </option>
+              <option value="regular">Regular - $399</option>
+              <option value="student">Student - $149.50 (with valid ID)</option>
+              <option value="group">
+                Group Registration (Contact us for pricing)
+              </option>
+            </select>
+          </p>
+
+          <p>
+            <strong>Dietary Restrictions or Accessibility Needs:</strong><br />
+            <label for="dietary">Please specify any dietary requirements:</label
+            ><br />
+            <textarea
+              id="dietary"
+              name="dietary"
+              rows="3"
+              cols="50"
+              placeholder="E.g., vegetarian, vegan, gluten-free, allergies..."
+            ></textarea>
+          </p>
+
+          <p>
+            <label for="accessibility"
+              >Accessibility accommodations needed:</label
+            ><br />
+            <textarea
+              id="accessibility"
+              name="accessibility"
+              rows="3"
+              cols="50"
+              placeholder="E.g., wheelchair access, sign language interpreter, large print materials..."
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Communications Preferences</legend>
+
+          <p>
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              value="yes"
+            />
+            <label for="newsletter"
+              >Subscribe to TechCon newsletter for future event updates</label
+            >
+          </p>
+
+          <p>
+            <input type="checkbox" id="sponsors" name="sponsors" value="yes" />
+            <label for="sponsors"
+              >Receive information from conference sponsors and partners</label
+            >
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              id="networking"
+              name="networking"
+              value="yes"
+            />
+            <label for="networking"
+              >Allow other attendees to contact me for networking (email
+              sharing)</label
+            >
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms and Conditions</legend>
+
+          <p>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="agreed"
+              required
+            />
+            <label for="terms"
+              >I agree to the
+              <a href="terms.html" target="_blank">Terms and Conditions</a> and
+              <a href="privacy.html" target="_blank">Privacy Policy</a></label
+            >
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              id="covid"
+              name="covid"
+              value="agreed"
+              required
+            />
+            <label for="covid"
+              >I acknowledge and agree to follow all health and safety protocols
+              established for TechCon 2024</label
+            >
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              id="refund"
+              name="refund"
+              value="understood"
+              required
+            />
+            <label for="refund"
+              >I understand the
+              <a href="refund-policy.html" target="_blank"
+                >cancellation and refund policy</a
+              ></label
+            >
+          </p>
+        </fieldset>
+
+        <h3>Complete Your Registration</h3>
+        <p>
+          <strong
+            >Review your information above and click the button below to proceed
+            to payment.</strong
+          >
+        </p>
+
+        <p>
+          <button type="submit">Register Now - Proceed to Payment</button>
+          <button type="reset">Clear Form</button>
+        </p>
+      </form>
+
+      <h3>Need Help?</h3>
+      <p>
+        If you encounter any issues with registration or have questions about
+        the conference, please contact our support team:
+      </p>
+      <ul>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:registration@techcon2024.com"
+            >registration@techcon2024.com</a
+          >
+        </li>
+        <li><strong>Phone:</strong> (555) 123-TECH (8324)</li>
+        <li>
+          <strong>Live Chat:</strong> Available 9 AM - 6 PM PST, Monday through
+          Friday
+        </li>
+      </ul>
+
+      <h3>After Registration</h3>
+      <p>Once you complete registration and payment, you will receive:</p>
+      <ol>
+        <li>Immediate email confirmation with receipt</li>
+        <li>Digital conference pass and QR code</li>
+        <li>Access to the TechCon 2024 mobile app</li>
+        <li>Pre-conference materials and preparation guide</li>
+        <li>Networking platform access to connect with other attendees</li>
+      </ol>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy; 2024 TechCon Conference. All rights reserved. Organized
+        by Global Tech Events LLC.
+      </p>
+    </footer>
+  </body>
+</html>
